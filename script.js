@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize Header Scroll & Minimalist Burger Overlay Nav
   initBurgerNav();
   
-  // Initialize Hero Video Background Controls (vid1.mp4) & Full Badge Fade Loop
+  // Initialize Hero Video Background Controls & Full Badge Fade Loop
   initHeroVideo();
 
   // Initialize Lightbox Modal Handlers (Close on X, Background Click, Escape Key)
