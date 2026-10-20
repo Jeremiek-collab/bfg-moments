@@ -60,13 +60,31 @@
   }
   </script>
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a href="#main" class="skip-link">Aller au contenu</a>
+
+  <!-- Sprite d'icônes SVG (remplace Font Awesome) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+    <symbol id="i-zoom-in" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></symbol>
+    <symbol id="i-check-square" viewBox="0 0 24 24"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+  </svg>
 
   <!-- =========================================================
        MINIMALIST HEADER & BURGER NAVIGATION
@@ -89,7 +107,7 @@
         </a>
 
         <!-- Minimalist Burger Menu Trigger -->
-        <button class="burger-trigger" id="burgerBtn" aria-label="Ouvrir le menu">
+        <button class="burger-trigger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navOverlay">
           <span class="burger-bar"></span>
           <span class="burger-bar"></span>
         </button>
@@ -98,7 +116,7 @@
   </header>
 
   <!-- Fullscreen Minimalist Overlay Navigation -->
-  <div class="nav-overlay" id="navOverlay">
+  <div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Menu de navigation">
     <div class="nav-overlay-content">
       <button class="overlay-close-btn" id="closeOverlayBtn" aria-label="Fermer le menu">&times;</button>
 
@@ -106,20 +124,21 @@
         <img src="logo.svg" alt="BFG MOMENT" class="overlay-logo">
       </div>
 
-      <nav class="overlay-menu">
+      <nav class="overlay-menu" aria-label="Sections du site">
         <a href="#hero" class="overlay-link active"><span class="link-num">01</span> ACCUEIL</a>
         <a href="#portfolio" class="overlay-link"><span class="link-num">02</span> NOS RÉALISATIONS</a>
         <a href="#tarifs" class="overlay-link"><span class="link-num">03</span> TARIFS SCRAPBOOK</a>
         <a href="#apropos" class="overlay-link"><span class="link-num">04</span> À PROPOS</a>
-        <a href="#contact" class="overlay-link"><span class="link-num">05</span> CONTACT & RÉSERVATION</a>
+        <a href="#temoignages" class="overlay-link"><span class="link-num">05</span> TÉMOIGNAGES</a>
+        <a href="#contact" class="overlay-link"><span class="link-num">06</span> CONTACT & RÉSERVATION</a>
       </nav>
 
       <div class="overlay-footer">
         <div class="o-contact-item">
-          <i class="fa fa-phone text-orange"></i> +225 0767660476
+          <svg class="icon text-orange" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg> +225 0767660476
         </div>
         <div class="o-contact-item">
-          <i class="fa fa-envelope text-orange"></i> bfgmoment@gmail.com
+          <svg class="icon text-orange" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg> bfgmoment@gmail.com
         </div>
         <div class="o-socials">
           <div class="social-icons-strip" style="margin-bottom: 1.25rem;">
@@ -130,7 +149,7 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.47 6.27 6.27 0 0 0 1.95-4.52V8.06a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.95.51z"/></svg>
             </a>
           </div>
-          <a href="https://wa.me/2250767660476" target="_blank" class="btn-nike"><i class="fa fa-whatsapp"></i> WHATSAPP DIRECT</a>
+          <a href="https://wa.me/2250767660476" target="_blank" class="btn-nike"><svg class="icon icon-fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg> WHATSAPP DIRECT</a>
         </div>
       </div>
     </div>
@@ -140,6 +159,7 @@
        HERO SECTION (Editorial Cover Page / Page de Garde)
        Matching Reference Screenshot (RESEDA Style)
        ========================================================= -->
+  <main id="main">
   <section class="hero-cover-section" id="hero">
     <div class="cover-container">
       <!-- Massive Hero Headline Spanning Full Width -->
@@ -179,17 +199,17 @@
        ========================================================= -->
   <div class="marquee-wrapper">
     <div class="marquee-content">
-      <div class="marquee-item"><span>MARIAGES TRADITIONNELS & CIVILS</span> <i class="fa fa-diamond"></i></div>
-      <div class="marquee-item"><span>CAPTATION DRONE 4K ULTRA-HD</span> <i class="fa fa-bolt"></i></div>
-      <div class="marquee-item"><span>FESTIVALS & SPECTACLES (MASA, ABISSA)</span> <i class="fa fa-star"></i></div>
-      <div class="marquee-item"><span>SOUTENANCES & ÉVÉNEMENTS OFFICIELS</span> <i class="fa fa-trophy"></i></div>
-      <div class="marquee-item"><span>FILM DE MARIAGE & TEASERS CINÉMA</span> <i class="fa fa-video-camera"></i></div>
+      <div class="marquee-item"><span>MARIAGES TRADITIONNELS & CIVILS</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-gem"/></svg></div>
+      <div class="marquee-item"><span>CAPTATION DRONE 4K ULTRA-HD</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-zap"/></svg></div>
+      <div class="marquee-item"><span>FESTIVALS & SPECTACLES (MASA, ABISSA)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-star"/></svg></div>
+      <div class="marquee-item"><span>SOUTENANCES & ÉVÉNEMENTS OFFICIELS</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trophy"/></svg></div>
+      <div class="marquee-item"><span>FILM DE MARIAGE & TEASERS CINÉMA</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg></div>
       <!-- Repeat -->
-      <div class="marquee-item"><span>MARIAGES TRADITIONNELS & CIVILS</span> <i class="fa fa-diamond"></i></div>
-      <div class="marquee-item"><span>CAPTATION DRONE 4K ULTRA-HD</span> <i class="fa fa-bolt"></i></div>
-      <div class="marquee-item"><span>FESTIVALS & SPECTACLES (MASA, ABISSA)</span> <i class="fa fa-star"></i></div>
-      <div class="marquee-item"><span>SOUTENANCES & ÉVÉNEMENTS OFFICIELS</span> <i class="fa fa-trophy"></i></div>
-      <div class="marquee-item"><span>FILM DE MARIAGE & TEASERS CINÉMA</span> <i class="fa fa-video-camera"></i></div>
+      <div class="marquee-item"><span>MARIAGES TRADITIONNELS & CIVILS</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-gem"/></svg></div>
+      <div class="marquee-item"><span>CAPTATION DRONE 4K ULTRA-HD</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-zap"/></svg></div>
+      <div class="marquee-item"><span>FESTIVALS & SPECTACLES (MASA, ABISSA)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-star"/></svg></div>
+      <div class="marquee-item"><span>SOUTENANCES & ÉVÉNEMENTS OFFICIELS</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trophy"/></svg></div>
+      <div class="marquee-item"><span>FILM DE MARIAGE & TEASERS CINÉMA</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg></div>
     </div>
   </div>
 
@@ -276,8 +296,29 @@
   </section>
 
   <!-- =========================================================
-       SECTION CONTACT & RÉSERVATION
+       SECTION TÉMOIGNAGES & CONFIANCE
        ========================================================= -->
+  <section class="section-padding trust-section" id="temoignages">
+    <div class="section-header text-center">
+      <h2 class="section-title">Ils nous ont fait <span class="text-orange">confiance</span></h2>
+      <p class="section-desc">
+        Des cérémonies intimes aux grandes scènes culturelles, voici quelques-uns des événements que nous avons eu l'honneur de capturer.
+      </p>
+    </div>
+
+    <ul class="trust-strip" aria-label="Événements couverts par BFG Moment">
+      <li>MASA 2024 &amp; 2026</li>
+      <li>Abissa ESMA</li>
+      <li>QITAA 2025</li>
+      <li>CHU de Cocody</li>
+      <li>Mariage Ghana × Côte d'Ivoire</li>
+    </ul>
+
+    <div class="testimonials-grid" id="testimonialsGrid">
+      <!-- Témoignages rendus par script.js (tableau testimonialsData) -->
+    </div>
+  </section>
+
   <!-- =========================================================
        SECTION CONTACT & RÉSERVATION (Design Editorial Multi-Step)
        ========================================================= -->
@@ -305,30 +346,30 @@
         <form class="booking-form-direct" id="bookingForm">
           
           <!-- Votre Nom * -->
-          <div class="form-field-group">
-            <label class="form-serif-heading">Votre Nom <span class="req-star">*</span></label>
+          <fieldset class="form-field-group">
+            <legend class="form-serif-heading">Votre Nom <span class="req-star">*</span></legend>
             <div class="subnames-grid">
               <div class="subname-col">
                 <label for="firstNameInput" class="subname-italic-label">Prénom</label>
-                <input type="text" class="elegant-input" id="firstNameInput" placeholder="Prénom" required>
+                <input type="text" class="elegant-input" id="firstNameInput" placeholder="Prénom" autocomplete="given-name" required>
               </div>
               <div class="subname-col">
                 <label for="lastNameInput" class="subname-italic-label">Nom</label>
-                <input type="text" class="elegant-input" id="lastNameInput" placeholder="Nom" required>
+                <input type="text" class="elegant-input" id="lastNameInput" placeholder="Nom" autocomplete="family-name" required>
               </div>
             </div>
-          </div>
+          </fieldset>
 
           <!-- Email & Téléphone en 2 colonnes -->
           <div class="form-duo-grid">
             <div class="form-field-group">
               <label for="emailInput" class="form-serif-heading">Email <span class="req-star">*</span></label>
-              <input type="email" class="elegant-input" id="emailInput" placeholder="votre-email@domaine.com" required>
+              <input type="email" class="elegant-input" id="emailInput" placeholder="votre-email@domaine.com" autocomplete="email" required>
             </div>
 
             <div class="form-field-group">
               <label for="phoneInput" class="form-serif-heading">Téléphone / WhatsApp <span class="req-star">*</span></label>
-              <input type="tel" class="elegant-input" id="phoneInput" placeholder="+225 07 00 00 00 00" required>
+              <input type="tel" class="elegant-input" id="phoneInput" placeholder="+225 07 00 00 00 00" autocomplete="tel" required>
             </div>
           </div>
 
@@ -344,7 +385,7 @@
                   <option value="Culture & Festival">Concert / Gala / MASA</option>
                   <option value="Shooting Studio">Shooting Photo & Portrait</option>
                 </select>
-                <span class="select-chevron"><i class="fa fa-chevron-down"></i></span>
+                <span class="select-chevron"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></span>
               </div>
             </div>
 
@@ -361,8 +402,8 @@
           </div>
 
           <!-- Prestations souhaitées * Checkboxes -->
-          <div class="form-field-group">
-            <label class="form-serif-heading">Prestations souhaitées <span class="req-star">*</span></label>
+          <fieldset class="form-field-group">
+            <legend class="form-serif-heading">Prestations souhaitées <span class="req-star">*</span></legend>
             <div class="sub-interest-note">Sélectionnez les prestations de votre choix</div>
             <div class="checkboxes-row-grid">
               <label class="stylish-checkbox-label">
@@ -386,7 +427,7 @@
                 <span class="checkbox-caption">Drone 4K Ultra-HD</span>
               </label>
             </div>
-          </div>
+          </fieldset>
 
           <!-- Message / Détails -->
           <div class="form-field-group">
@@ -398,7 +439,7 @@
           <div style="text-align: center;">
             <button type="submit" class="btn-whatsapp-direct" id="submitBookingBtn">
               <span>Envoyez la demande</span>
-              <span class="btn-wa-icon"><i class="fa fa-whatsapp"></i></span>
+              <span class="btn-wa-icon"><svg class="icon icon-fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg></span>
             </button>
           </div>
         </form>
@@ -407,14 +448,27 @@
     </div>
   </section>
 
+  </main>
+
   <!-- Lightbox Modal -->
-  <div class="lightbox-modal" id="lightboxModal">
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
     <div class="lightbox-content">
-      <div class="lightbox-close"><i class="fa fa-times"></i></div>
+      <button type="button" class="lightbox-close" id="lightboxCloseBtn" aria-label="Fermer la visionneuse">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-x"/></svg>
+      </button>
       <div class="lightbox-media-container"></div>
       <div class="lightbox-caption">
-        <div class="lightbox-title">BFG MOMENT</div>
-        <div class="lightbox-desc">Production Vidéo & Photographie</div>
+        <button type="button" class="lightbox-nav-btn" id="lightboxPrevBtn" aria-label="Média précédent">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-left"/></svg>
+        </button>
+        <div class="lightbox-caption-text">
+          <div class="lightbox-title" id="lightboxTitle">BFG MOMENT</div>
+          <div class="lightbox-desc">Production Vidéo & Photographie</div>
+          <div class="lightbox-counter" id="lightboxCounter" aria-live="polite"></div>
+        </div>
+        <button type="button" class="lightbox-nav-btn" id="lightboxNextBtn" aria-label="Média suivant">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-right"/></svg>
+        </button>
       </div>
     </div>
   </div>
@@ -447,6 +501,7 @@
           <li><a href="#portfolio">Nos Réalisations</a></li>
           <li><a href="#tarifs">Tarifs Scrapbook</a></li>
           <li><a href="#apropos">À Propos</a></li>
+          <li><a href="#temoignages">Témoignages</a></li>
           <li><a href="#contact">Réservation</a></li>
         </ul>
       </div>
@@ -464,8 +519,8 @@
       <div>
         <h4 class="footer-col-title">CONTACT DIRECT</h4>
         <ul class="footer-links">
-          <li><a href="tel:+2250767660476"><i class="fa fa-phone"></i> +225 0767660476</a></li>
-          <li><a href="mailto:bfgmoment@gmail.com"><i class="fa fa-envelope"></i> bfgmoment@gmail.com</a></li>
+          <li><a href="tel:+2250767660476"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg> +225 0767660476</a></li>
+          <li><a href="mailto:bfgmoment@gmail.com"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg> bfgmoment@gmail.com</a></li>
         </ul>
       </div>
     </div>

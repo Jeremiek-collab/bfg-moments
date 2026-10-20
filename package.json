@@ -1,24 +1,12 @@
 {
-  "name": "bfg-moments-showcase",
-  "version": "1.0.0",
-  "description": "Site vitrine de photographie & vidéo BFG Moments avec fond vidéo fullscreen et design inspiré de Nike Careers",
-  "main": "index.html",
+  "name": "bfg-moment-site",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Site vitrine de BFG Moment, studio de photographie et de production vidéo à Abidjan. Site statique (HTML, CSS, JS), sans étape de build.",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "serve": "npx serve ."
+    "dev": "npx serve .",
+    "deploy": "vercel deploy --prod"
   },
-  "keywords": [
-    "bfg-moments",
-    "videography",
-    "photography",
-    "nike-careers-design",
-    "fullscreen-video-hero"
-  ],
-  "author": "Antigravity AI",
-  "license": "MIT",
-  "devDependencies": {
-    "vite": "^5.0.0"
-  }
+  "author": "CodexWorld",
+  "license": "UNLICENSED"
 }
