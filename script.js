@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize Header Scroll & Minimalist Burger Overlay Nav
   initBurgerNav();
   
+  // Initialize Hero Video (son, préférence "moins d'animations", pause hors écran)
+  initHeroVideo();
+
   // Initialize Lightbox Modal Handlers (Close on X, Background Click, Escape Key)
   initLightbox();
   
@@ -76,6 +79,45 @@ function initBurgerNav() {
       closeOverlay();
     });
   });
+}
+
+/* =========================================================
+   2. HERO VIDEO
+   ========================================================= */
+function initHeroVideo() {
+  const video = document.getElementById('heroVideo');
+  const soundBtn = document.getElementById('heroSoundBtn');
+  if (!video) return;
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (reduceMotion.matches) {
+    video.removeAttribute('autoplay');
+    video.pause();
+  } else {
+    video.play().catch(() => {});
+  }
+
+  // Pause quand le hero n'est plus visible (économie batterie / CPU)
+  if ('IntersectionObserver' in window && !reduceMotion.matches) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) video.play().catch(() => {});
+        else video.pause();
+      });
+    }, { threshold: 0.2 });
+    io.observe(video);
+  }
+
+  if (soundBtn) {
+    soundBtn.addEventListener('click', () => {
+      const unmuting = video.muted;
+      video.muted = !unmuting;
+      if (unmuting) video.play().catch(() => {});
+      soundBtn.setAttribute('aria-pressed', unmuting ? 'true' : 'false');
+      soundBtn.setAttribute('aria-label', unmuting ? 'Couper le son de la vidéo' : 'Activer le son de la vidéo');
+      soundBtn.querySelector('use').setAttribute('href', unmuting ? '#i-volume-on' : '#i-volume-off');
+    });
+  }
 }
 
 /* =========================================================
@@ -241,7 +283,7 @@ function init3DCurvedPortfolio() {
     const imgSrc = item.type === 'video' ? item.poster : item.src;
 
     card.innerHTML = `
-      <img src="${imgSrc}" alt="" class="hd-card-media" loading="lazy" decoding="async">
+      <img src="${imgSrc}" alt="${item.title} – ${item.subtitle} (${item.pill.toLowerCase()}) par BFG Moment" class="hd-card-media" loading="lazy" decoding="async">
       ${item.type === 'video' ? `
         <video src="${item.src}" poster="${item.poster}" preload="none" loop muted playsinline class="hd-card-video" tabindex="-1"></video>
       ` : ''}
@@ -433,7 +475,7 @@ function initScrapbookPaperTarifs() {
           <div class="paper-doc-num">${pack.docNum}</div>
         </div>
         <div class="paper-photo-cutout">
-          <img src="${pack.image}" alt="" class="paper-photo-img" loading="lazy" decoding="async">
+          <img src="${pack.image}" alt="Formule ${pack.name} – ${pack.subtitle}" class="paper-photo-img" loading="lazy" decoding="async">
         </div>
         <ul class="paper-specs-list">
           ${pack.features.map(feat => `

@@ -1,10 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schema/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://bfg-moments.vercel.app/</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <image:image><image:loc>https://bfg-moments.vercel.app/assets/og-image.jpg</image:loc></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/abissa-esma-22.webp</image:loc><image:title>Abissa Esma 22 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/abissa-esma-23.webp</image:loc><image:title>Abissa Esma 23 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/hero-bride-bw.webp</image:loc><image:title>Hero Bride Bw – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/kerozen-civil-20.webp</image:loc><image:title>Kerozen Civil 20 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/kerozen-civil-21.webp</image:loc><image:title>Kerozen Civil 21 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/masa-culture-1.webp</image:loc><image:title>Masa Culture 1 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/masa-culture-2.webp</image:loc><image:title>Masa Culture 2 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/media-15.webp</image:loc><image:title>Media 15 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/media-16.webp</image:loc><image:title>Media 16 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/media-17.webp</image:loc><image:title>Media 17 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/qitaa-concert-3.webp</image:loc><image:title>Qitaa Concert 3 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/qitaa-concert-4.webp</image:loc><image:title>Qitaa Concert 4 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/qitaa-concert-5.webp</image:loc><image:title>Qitaa Concert 5 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/qitaa-concert-6.webp</image:loc><image:title>Qitaa Concert 6 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/soutenance-jennifer-8.webp</image:loc><image:title>Soutenance Jennifer 8 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/soutenance-jennifer-9.webp</image:loc><image:title>Soutenance Jennifer 9 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/vales-marie-10.webp</image:loc><image:title>Vales Marie 10 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/vales-marie-11.webp</image:loc><image:title>Vales Marie 11 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/vales-marie-12.webp</image:loc><image:title>Vales Marie 12 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/vales-marie-13.webp</image:loc><image:title>Vales Marie 13 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/vales-marie-14.webp</image:loc><image:title>Vales Marie 14 – BFG Moment Abidjan</image:title></image:image>
+    <image:image><image:loc>https://bfg-moments.vercel.app/assets/og-image.jpg</image:loc><image:title>BFG MOMENT – Photographe et vidéaste de mariage à Abidjan</image:title></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://bfg-moments.vercel.app/assets/hero-poster.webp</video:thumbnail_loc>
+      <video:title>BFG Moment – Film de présentation du studio</video:title>
+      <video:description>Extraits de mariages, cérémonies et événements filmés par BFG Moment à Abidjan.</video:description>
+      <video:content_loc>https://bfg-moments.vercel.app/assets/hero-reel.mp4</video:content_loc>
+      <video:duration>26</video:duration>
+      <video:publication_date>2026-09-07</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://bfg-moments.vercel.app/assets/posters/hero-showreel-poster.webp</video:thumbnail_loc>
+      <video:title>BFG Showreel 2026 – Best of mariages et événements</video:title>
+      <video:description>Showreel 2026 : films de mariage traditionnel et civil, soutenances et spectacles en Côte d'Ivoire.</video:description>
+      <video:content_loc>https://bfg-moments.vercel.app/assets/hero-showreel.mp4</video:content_loc>
+      <video:duration>41</video:duration>
+      <video:publication_date>2026-09-12</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://bfg-moments.vercel.app/assets/posters/video-ghana-poster.webp</video:thumbnail_loc>
+      <video:title>Quand 2 cultures s'unissent – Mariage Ghana × Côte d'Ivoire</video:title>
+      <video:description>Film de mariage réunissant les cultures ghanéenne et ivoirienne, par BFG Moment.</video:description>
+      <video:content_loc>https://bfg-moments.vercel.app/assets/video-ghana.mp4</video:content_loc>
+      <video:duration>35</video:duration>
+      <video:publication_date>2026-09-12</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://bfg-moments.vercel.app/assets/posters/video-baoule-poster.webp</video:thumbnail_loc>
+      <video:title>Love All Day – Mariage traditionnel baoulé</video:title>
+      <video:description>Film de mariage traditionnel baoulé tourné en Côte d'Ivoire par BFG Moment.</video:description>
+      <video:content_loc>https://bfg-moments.vercel.app/assets/video-baoule.mp4</video:content_loc>
+      <video:duration>32</video:duration>
+      <video:publication_date>2026-09-12</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
   </url>
 </urlset>
