@@ -166,29 +166,29 @@ function initLightbox() {
    4. NOS RÉALISATIONS - 3D CURVED PERSPECTIVE CAROUSEL
    ========================================================= */
 const portfolio23Dataset = [
-  { type: "video", src: "assets/video-ghana.mp4", category: "video", title: "Quand 2 cultures s'unissent", subtitle: "Ghana x CI", pill: "CINÉMA VIDEO" },
-  { type: "video", src: "assets/video-baoule.mp4", category: "video", title: "Love All Day - Baoulé", subtitle: "Traditionnel", pill: "CINÉMA VIDEO" },
-  { type: "image", src: "assets/vales-marie-10.jpg", category: "mariage-trad", title: "Vales & Marie 1", subtitle: "Mariage Baoulé", pill: "MARIAGE TRAD" },
-  { type: "image", src: "assets/vales-marie-11.jpg", category: "mariage-trad", title: "Moments d'Émotion", subtitle: "Vales & Marie", pill: "MARIAGE TRAD" },
-  { type: "image", src: "assets/vales-marie-12.jpg", category: "mariage-trad", title: "Élégance Baoulé", subtitle: "Mariage Trad", pill: "MARIAGE TRAD" },
-  { type: "image", src: "assets/kerozen-civil-20.jpg", category: "mariage-civil", title: "Couple KEROZEN", subtitle: "Mariage Civil", pill: "MARIAGE CIVIL" },
-  { type: "image", src: "assets/kerozen-civil-21.jpg", category: "mariage-civil", title: "Hôtel Communal", subtitle: "Mariage Civil", pill: "MARIAGE CIVIL" },
-  { type: "image", src: "assets/masa-culture-1.jpg", category: "evenement", title: "MASA - Ebinto", subtitle: "Abidjan", pill: "MASA 2026" },
-  { type: "image", src: "assets/masa-culture-2.jpg", category: "evenement", title: "MASA - Performance", subtitle: "Spectacle", pill: "MASA 2026" },
-  { type: "image", src: "assets/soutenance-jennifer-8.jpg", category: "soutenance", title: "Dr. Jennifer 1", subtitle: "CHU Cocody", pill: "SOUTENANCE" },
-  { type: "image", src: "assets/soutenance-jennifer-9.jpg", category: "soutenance", title: "Dr. Jennifer 2", subtitle: "CHU Cocody", pill: "SOUTENANCE" },
-  { type: "image", src: "assets/qitaa-concert-3.jpg", category: "evenement", title: "QITAA 2025 Live 1", subtitle: "Concert", pill: "SPECTACLE" },
-  { type: "image", src: "assets/qitaa-concert-4.jpg", category: "evenement", title: "QITAA 2025 Live 2", subtitle: "Concert", pill: "SPECTACLE" },
-  { type: "image", src: "assets/qitaa-concert-5.jpg", category: "evenement", title: "QITAA 2025 Live 3", subtitle: "Concert", pill: "SPECTACLE" },
-  { type: "image", src: "assets/qitaa-concert-6.jpg", category: "evenement", title: "QITAA 2025 Live 4", subtitle: "Concert", pill: "SPECTACLE" },
-  { type: "image", src: "assets/abissa-esma-22.jpg", category: "evenement", title: "Abissa ESMA 1", subtitle: "Festival", pill: "ABISSA" },
-  { type: "image", src: "assets/abissa-esma-23.jpg", category: "evenement", title: "Abissa ESMA 2", subtitle: "Festival", pill: "ABISSA" },
-  { type: "image", src: "assets/vales-marie-13.jpg", category: "mariage-trad", title: "Vales & Marie 4", subtitle: "Mariage Trad", pill: "MARIAGE TRAD" },
-  { type: "image", src: "assets/vales-marie-14.jpg", category: "mariage-trad", title: "Vales & Marie 5", subtitle: "Mariage Trad", pill: "MARIAGE TRAD" },
-  { type: "image", src: "assets/media-15.jpg", category: "evenement", title: "MASA 2024 Scène 1", subtitle: "Abidjan", pill: "MASA 2024" },
-  { type: "image", src: "assets/media-16.jpg", category: "evenement", title: "MASA 2024 Scène 2", subtitle: "Abidjan", pill: "MASA 2024" },
-  { type: "image", src: "assets/media-17.jpg", category: "evenement", title: "MASA 2024 Scène 3", subtitle: "Abidjan", pill: "MASA 2024" },
-  { type: "video", src: "assets/hero-showreel.mp4", category: "video", title: "BFG Showreel 2026", subtitle: "Best Of Video", pill: "SHOWREEL" }
+  { type: "video", src: "assets/video-ghana.mp4", poster: "assets/posters/video-ghana-poster.webp", category: "video", title: "Quand 2 cultures s'unissent", subtitle: "Ghana x CI", pill: "CINÉMA VIDEO" },
+  { type: "video", src: "assets/video-baoule.mp4", poster: "assets/posters/video-baoule-poster.webp", category: "video", title: "Love All Day - Baoulé", subtitle: "Traditionnel", pill: "CINÉMA VIDEO" },
+  { type: "image", src: "assets/vales-marie-10.webp", category: "mariage-trad", title: "Vales & Marie 1", subtitle: "Mariage Baoulé", pill: "MARIAGE TRAD" },
+  { type: "image", src: "assets/vales-marie-11.webp", category: "mariage-trad", title: "Moments d'Émotion", subtitle: "Vales & Marie", pill: "MARIAGE TRAD" },
+  { type: "image", src: "assets/vales-marie-12.webp", category: "mariage-trad", title: "Élégance Baoulé", subtitle: "Mariage Trad", pill: "MARIAGE TRAD" },
+  { type: "image", src: "assets/kerozen-civil-20.webp", category: "mariage-civil", title: "Couple KEROZEN", subtitle: "Mariage Civil", pill: "MARIAGE CIVIL" },
+  { type: "image", src: "assets/kerozen-civil-21.webp", category: "mariage-civil", title: "Hôtel Communal", subtitle: "Mariage Civil", pill: "MARIAGE CIVIL" },
+  { type: "image", src: "assets/masa-culture-1.webp", category: "evenement", title: "MASA - Ebinto", subtitle: "Abidjan", pill: "MASA 2026" },
+  { type: "image", src: "assets/masa-culture-2.webp", category: "evenement", title: "MASA - Performance", subtitle: "Spectacle", pill: "MASA 2026" },
+  { type: "image", src: "assets/soutenance-jennifer-8.webp", category: "soutenance", title: "Dr. Jennifer 1", subtitle: "CHU Cocody", pill: "SOUTENANCE" },
+  { type: "image", src: "assets/soutenance-jennifer-9.webp", category: "soutenance", title: "Dr. Jennifer 2", subtitle: "CHU Cocody", pill: "SOUTENANCE" },
+  { type: "image", src: "assets/qitaa-concert-3.webp", category: "evenement", title: "QITAA 2025 Live 1", subtitle: "Concert", pill: "SPECTACLE" },
+  { type: "image", src: "assets/qitaa-concert-4.webp", category: "evenement", title: "QITAA 2025 Live 2", subtitle: "Concert", pill: "SPECTACLE" },
+  { type: "image", src: "assets/qitaa-concert-5.webp", category: "evenement", title: "QITAA 2025 Live 3", subtitle: "Concert", pill: "SPECTACLE" },
+  { type: "image", src: "assets/qitaa-concert-6.webp", category: "evenement", title: "QITAA 2025 Live 4", subtitle: "Concert", pill: "SPECTACLE" },
+  { type: "image", src: "assets/abissa-esma-22.webp", category: "evenement", title: "Abissa ESMA 1", subtitle: "Festival", pill: "ABISSA" },
+  { type: "image", src: "assets/abissa-esma-23.webp", category: "evenement", title: "Abissa ESMA 2", subtitle: "Festival", pill: "ABISSA" },
+  { type: "image", src: "assets/vales-marie-13.webp", category: "mariage-trad", title: "Vales & Marie 4", subtitle: "Mariage Trad", pill: "MARIAGE TRAD" },
+  { type: "image", src: "assets/vales-marie-14.webp", category: "mariage-trad", title: "Vales & Marie 5", subtitle: "Mariage Trad", pill: "MARIAGE TRAD" },
+  { type: "image", src: "assets/media-15.webp", category: "evenement", title: "MASA 2024 Scène 1", subtitle: "Abidjan", pill: "MASA 2024" },
+  { type: "image", src: "assets/media-16.webp", category: "evenement", title: "MASA 2024 Scène 2", subtitle: "Abidjan", pill: "MASA 2024" },
+  { type: "image", src: "assets/media-17.webp", category: "evenement", title: "MASA 2024 Scène 3", subtitle: "Abidjan", pill: "MASA 2024" },
+  { type: "video", src: "assets/hero-showreel.mp4", poster: "assets/posters/hero-showreel-poster.webp", category: "video", title: "BFG Showreel 2026", subtitle: "Best Of Video", pill: "SHOWREEL" }
 ];
 
 function init3DCurvedPortfolio() {
@@ -209,12 +209,12 @@ function init3DCurvedPortfolio() {
     card.className = 'hd-curved-card';
     card.setAttribute('data-index', index);
 
-    const imgSrc = item.type === 'video' ? 'assets/vales-marie-10.jpg' : item.src;
+    const imgSrc = item.type === 'video' ? item.poster : item.src;
 
     card.innerHTML = `
-      <img src="${imgSrc}" alt="${item.title}" class="hd-card-media">
+      <img src="${imgSrc}" alt="${item.title}" class="hd-card-media" loading="lazy" decoding="async">
       ${item.type === 'video' ? `
-        <video src="${item.src}" loop muted playsinline class="hd-card-video"></video>
+        <video src="${item.src}" poster="${item.poster}" preload="none" loop muted playsinline class="hd-card-video"></video>
       ` : ''}
       <div class="hd-card-overlay">
         <span class="hd-tag-pill">${item.pill}</span>
@@ -314,7 +314,7 @@ const allPricingPackages = [
     subtitle: "Mariage Traditionnel Baoulé & CI",
     price: "300.000 FCFA",
     featured: false,
-    image: "assets/vales-marie-10.jpg",
+    image: "assets/vales-marie-10.webp",
     tilt: "-2.5deg",
     features: [
       "1 Photographe Dédié Pro",
@@ -331,7 +331,7 @@ const allPricingPackages = [
     subtitle: "Mariage Traditionnel Prestige",
     price: "400.000 FCFA",
     featured: true,
-    image: "assets/vales-marie-12.jpg",
+    image: "assets/vales-marie-12.webp",
     tilt: "2.8deg",
     features: [
       "1 Photographe Dédié Pro",
@@ -348,7 +348,7 @@ const allPricingPackages = [
     subtitle: "Mariage Traditionnel Excellence",
     price: "500.000 FCFA",
     featured: false,
-    image: "assets/vales-marie-11.jpg",
+    image: "assets/vales-marie-11.webp",
     tilt: "-1.8deg",
     features: [
       "2 Photographes Dédiés Pros",
@@ -365,7 +365,7 @@ const allPricingPackages = [
     subtitle: "Mariage Civil Hôtel Communal",
     price: "350.000 FCFA",
     featured: false,
-    image: "assets/kerozen-civil-20.jpg",
+    image: "assets/kerozen-civil-20.webp",
     tilt: "1.5deg",
     features: [
       "1 Photographe Dédié Pro",
@@ -382,7 +382,7 @@ const allPricingPackages = [
     subtitle: "Mariage Civil & Soirée Gala",
     price: "500.000 FCFA",
     featured: true,
-    image: "assets/kerozen-civil-21.jpg",
+    image: "assets/kerozen-civil-21.webp",
     tilt: "-3.2deg",
     features: [
       "1 Droniste 4K Certifié Inclus",
@@ -399,7 +399,7 @@ const allPricingPackages = [
     subtitle: "Couverture Totale VIP 2 Jours",
     price: "600.000 FCFA",
     featured: false,
-    image: "assets/vales-marie-13.jpg",
+    image: "assets/vales-marie-13.webp",
     tilt: "2.2deg",
     features: [
       "1 Droniste 4K Certifié Inclus",
@@ -461,7 +461,7 @@ function renderPaperStack() {
         </div>
 
         <div class="paper-photo-cutout">
-          <img src="${pack.image}" alt="${pack.name}" class="paper-photo-img">
+          <img src="${pack.image}" alt="${pack.name}" class="paper-photo-img" loading="lazy" decoding="async">
         </div>
 
         <div class="paper-specs-list">

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bfg-moments.vercel.app/sitemap.xml
