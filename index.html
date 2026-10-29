@@ -12,7 +12,7 @@
   <meta name="geo.placename" content="Abidjan">
   <meta name="geo.position" content="5.36;-4.0083">
   <meta name="ICBM" content="5.36, -4.0083">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="theme-color" content="#000000">
   <link rel="canonical" href="https://bfg-moments.vercel.app/">
   <link rel="alternate" hreflang="fr" href="https://bfg-moments.vercel.app/">
   <link rel="alternate" hreflang="fr-CI" href="https://bfg-moments.vercel.app/">
@@ -459,527 +459,323 @@
   </script>
 
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="is-loading">
   <a href="#main" class="skip-link">Aller au contenu</a>
 
-  <!-- Sprite d'icônes SVG (remplace Font Awesome) -->
+  <!-- Sprite d'icônes SVG -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
-    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
-    <symbol id="i-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
-    <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
-    <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
-    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
-    <symbol id="i-video" viewBox="0 0 24 24"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol>
-    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
     <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
     <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
-    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
-    <symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
-    <symbol id="i-zoom-in" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></symbol>
-    <symbol id="i-check-square" viewBox="0 0 24 24"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></symbol>
     <symbol id="i-volume-off" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></symbol>
     <symbol id="i-volume-on" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></symbol>
-    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
-    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
   </svg>
 
   <!-- =========================================================
-       MINIMALIST HEADER & BURGER NAVIGATION
+       PRÉCHARGEMENT (cadre cinéma : coins, barre de progression)
        ========================================================= -->
-  <header class="site-header minimalist-header" id="siteHeader">
-    <div class="header-container">
-      <!-- Discrete Logo Badge -->
-      <a href="#hero" class="brand-logo-discrete">
-        <img src="logo.svg" alt="BFG MOMENT Logo" class="header-logo-img">
-        <span class="brand-name-subtle">BFG MOMENT</span>
-      </a>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <span class="pl-corner pl-tl">Abidjan, CI</span>
+    <span class="pl-corner pl-tr" id="plRole">Photographe</span>
+    <span class="pl-corner pl-bl">2.39:1</span>
+    <span class="pl-corner pl-br">FPS: 24</span>
+    <div class="pl-center">
+      <span class="pl-bar"><span class="pl-bar-fill" id="plBar"></span></span>
+      <span class="pl-pct" id="plPct">0%</span>
+    </div>
+  </div>
 
-      <!-- Header Actions: Socials & Menu -->
-      <div class="header-actions">
-        <a href="https://www.instagram.com/bfg_moment/" target="_blank" rel="noopener" class="header-social-btn" aria-label="Instagram BFG Moment" title="Instagram @bfg_moment">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-        </a>
-        <a href="https://www.tiktok.com/@bfg_moment" target="_blank" rel="noopener" class="header-social-btn" aria-label="TikTok BFG Moment" title="TikTok @bfg_moment">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.47 6.27 6.27 0 0 0 1.95-4.52V8.06a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.95.51z"/></svg>
-        </a>
-
-        <!-- Minimalist Burger Menu Trigger -->
-        <button class="burger-trigger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navOverlay">
-          <span class="burger-bar"></span>
-          <span class="burger-bar"></span>
-        </button>
-      </div>
+  <!-- =========================================================
+       EN-TÊTE (mix-blend-mode: difference)
+       ========================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-left">
+      <a href="#hero" class="brand" aria-label="BFG Moment, retour à l'accueil"><img src="logo.svg" alt="BFG Moment" class="brand-logo" width="48" height="48"></a>
+      <span class="header-clock" aria-hidden="true">• <span class="js-clock">--:--:--</span> GMT</span>
+    </div>
+    <div class="header-right">
+      <a href="#portfolio" class="link-underline header-viewwork">Voir les projets</a>
+      <button type="button" class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navOverlay">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
     </div>
   </header>
 
-  <!-- Fullscreen Minimalist Overlay Navigation -->
-  <div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Menu de navigation">
-    <div class="nav-overlay-content">
-      <button class="overlay-close-btn" id="closeOverlayBtn" aria-label="Fermer le menu">&times;</button>
-
-      <div class="overlay-brand">
-        <img src="logo.svg" alt="BFG MOMENT" class="overlay-logo">
-      </div>
-
-      <nav class="overlay-menu" aria-label="Sections du site">
-        <a href="#hero" class="overlay-link active"><span class="link-num">01</span> ACCUEIL</a>
-        <a href="#portfolio" class="overlay-link"><span class="link-num">02</span> NOS RÉALISATIONS</a>
-        <a href="#tarifs" class="overlay-link"><span class="link-num">03</span> TARIFS SCRAPBOOK</a>
-        <a href="#apropos" class="overlay-link"><span class="link-num">04</span> À PROPOS</a>
-        <a href="#temoignages" class="overlay-link"><span class="link-num">05</span> TÉMOIGNAGES</a>
-        <a href="#faq" class="overlay-link"><span class="link-num">06</span> FAQ</a>
-        <a href="#contact" class="overlay-link"><span class="link-num">07</span> CONTACT & RÉSERVATION</a>
-      </nav>
-
-      <div class="overlay-footer">
-        <div class="o-contact-item">
-          <svg class="icon text-orange" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg> +225 0767660476
-        </div>
-        <div class="o-contact-item">
-          <svg class="icon text-orange" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg> bfgmoment@gmail.com
-        </div>
-        <div class="o-socials">
-          <div class="social-icons-strip" style="margin-bottom: 1.25rem;">
-            <a href="https://www.instagram.com/bfg_moment/" target="_blank" rel="noopener" class="social-icon-link" aria-label="Instagram BFG Moment" title="Instagram @bfg_moment">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-            </a>
-            <a href="https://www.tiktok.com/@bfg_moment" target="_blank" rel="noopener" class="social-icon-link" aria-label="TikTok BFG Moment" title="TikTok @bfg_moment">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.47 6.27 6.27 0 0 0 1.95-4.52V8.06a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.95.51z"/></svg>
-            </a>
-          </div>
-          <a href="https://wa.me/2250767660476" target="_blank" class="btn-nike"><svg class="icon icon-fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg> WHATSAPP DIRECT</a>
-        </div>
-      </div>
+  <!-- Menu plein écran -->
+  <div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Menu de navigation" inert>
+    <nav class="nav-list" aria-label="Sections du site">
+      <a href="#hero" class="nav-item"><span class="nav-num">(01)</span><span class="nav-label">Accueil</span></a>
+      <a href="#portfolio" class="nav-item"><span class="nav-num">(02)</span><span class="nav-label">Projets</span></a>
+      <a href="#tarifs" class="nav-item"><span class="nav-num">(03)</span><span class="nav-label">Tarifs</span></a>
+      <a href="#apropos" class="nav-item"><span class="nav-num">(04)</span><span class="nav-label">Studio</span></a>
+      <a href="#faq" class="nav-item"><span class="nav-num">(05)</span><span class="nav-label">FAQ</span></a>
+    </nav>
+    <div class="nav-foot">
+      <a href="https://www.instagram.com/bfg_moment/" target="_blank" rel="noopener" class="link-underline">Instagram</a>
+      <a href="https://www.tiktok.com/@bfg_moment" target="_blank" rel="noopener" class="link-underline">TikTok</a>
+      <button type="button" class="link-underline js-open-contact">Nous contacter</button>
     </div>
   </div>
 
-  <!-- =========================================================
-       HERO SECTION (Editorial Cover Page / Page de Garde)
-       Matching Reference Screenshot (RESEDA Style)
-       ========================================================= -->
   <main id="main">
-  <section class="hero-cover-section" id="hero">
-    <div class="cover-container">
-      <!-- Massive Hero Headline Spanning Full Width -->
-      <div class="cover-headline-wrapper">
-        <h1 class="cover-headline">BFG MOMENT</h1>
-      </div>
+  <!-- =========================================================
+       HERO : films plein écran, titre Bebas, règle de timeline
+       ========================================================= -->
+  <section class="hero" id="hero" aria-roledescription="carrousel" aria-label="Films BFG Moment">
+    <h1 class="sr-only">BFG Moment, photographe et vidéaste de mariage à Abidjan, Côte d'Ivoire</h1>
+    <div class="hero-slides" id="heroSlides">
+      <!-- Diapositives rendues par script.js (tableau heroFilms) -->
+    </div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-caption" aria-live="polite">
+      <h2 class="hero-title" id="heroTitle">BFG Showreel 2026</h2>
+      <p class="hero-cat" id="heroCat">Film</p>
+    </div>
+    <div class="hero-letterbox" aria-hidden="true"><span></span><span></span></div>
 
-      <!-- Two Column Editorial Layout -->
-      <div class="cover-content-grid">
-        <!-- Left Column: User's Black & White Bride Photo -->
-        <div class="cover-photo-wrapper">
-          <video class="cover-photo-img cover-video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.webp" width="640" height="800" aria-label="Film de présentation BFG Moment : extraits de mariages et d'événements à Abidjan">
-            <source src="assets/hero-reel.mp4" type="video/mp4">
-            <img src="assets/hero-poster.webp" alt="Mariée souriante en tenue traditionnelle, extrait du film de présentation BFG Moment" width="640" height="800">
-          </video>
-          <button type="button" class="hero-sound-btn" id="heroSoundBtn" aria-pressed="false" aria-label="Activer le son de la vidéo">
-            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-volume-off"/></svg>
-            <span class="hero-sound-label">Son</span>
-          </button>
-        </div>
+    <div class="hero-bottom">
+      <button type="button" class="hero-sound" id="heroSoundBtn" aria-pressed="false" aria-label="Activer le son">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-volume-off"/></svg>
+        <span>Son</span>
+      </button>
+      <div class="ruler" id="heroRuler" role="tablist" aria-label="Choisir un film"></div>
+      <p class="hero-meta">Photographe &amp; vidéaste · Abidjan</p>
+    </div>
+  </section>
 
-        <!-- Right Column: Editorial Subtitle, Typewriter Bio & CTA -->
-        <div class="cover-text-wrapper">
-          <div>
-            <h2 class="cover-subheadline">
-              PHOTOGRAPHE & VIDÉASTE DE MARIAGE À ABIDJAN, CÔTE D'IVOIRE
-            </h2>
-
-            <p class="cover-bio-typewriter">
-              Basée à Abidjan, BFG Moment est une agence de production vidéo, cinématographie d'art et photographie d'exception. Son jeu avec la lumière et les émotions définit son style unique. Pour BFG Moment, chaque événement est un chef-d'œuvre. L'éphémère devient éternel.
-            </p>
+  <!-- =========================================================
+       PROJETS : titre géant, filtres, grille 2 + 3, vue liste
+       ========================================================= -->
+  <section class="work" id="portfolio">
+    <div class="work-head">
+      <div class="eyebrow-row"><span>Sélection</span><span>Projets</span></div>
+      <div class="work-title-row">
+        <h2 class="mega">Projets<sup class="mega-count" id="workCount">(10)</sup></h2>
+        <div class="work-tools">
+          <div class="view-switch" role="group" aria-label="Affichage">
+            <span class="view-label">Vue</span>
+            <span class="view-btns">
+              <button type="button" class="view-btn is-active" data-view="grid" aria-pressed="true" aria-label="Vue grille">1</button><span aria-hidden="true">|</span><button type="button" class="view-btn" data-view="list" aria-pressed="false" aria-label="Vue liste">2</button>
+            </span>
           </div>
-
-          <a href="#portfolio" class="cover-cta-box">
-            <span>À propos de BFG Moment &rarr;</span>
-          </a>
+          <button type="button" class="filters-toggle" id="filtersToggle" aria-expanded="false" aria-controls="filtersPanel">Filtres <span aria-hidden="true">+</span></button>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- =========================================================
-       MARQUEE BANNER
-       ========================================================= -->
-  <div class="marquee-wrapper">
-    <div class="marquee-content">
-      <div class="marquee-item"><span>MARIAGES TRADITIONNELS & CIVILS</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-gem"/></svg></div>
-      <div class="marquee-item"><span>CAPTATION DRONE 4K ULTRA-HD</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-zap"/></svg></div>
-      <div class="marquee-item"><span>FESTIVALS & SPECTACLES (MASA, ABISSA)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-star"/></svg></div>
-      <div class="marquee-item"><span>SOUTENANCES & ÉVÉNEMENTS OFFICIELS</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trophy"/></svg></div>
-      <div class="marquee-item"><span>FILM DE MARIAGE & TEASERS CINÉMA</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg></div>
-      <!-- Repeat -->
-      <div class="marquee-item"><span>MARIAGES TRADITIONNELS & CIVILS</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-gem"/></svg></div>
-      <div class="marquee-item"><span>CAPTATION DRONE 4K ULTRA-HD</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-zap"/></svg></div>
-      <div class="marquee-item"><span>FESTIVALS & SPECTACLES (MASA, ABISSA)</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-star"/></svg></div>
-      <div class="marquee-item"><span>SOUTENANCES & ÉVÉNEMENTS OFFICIELS</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trophy"/></svg></div>
-      <div class="marquee-item"><span>FILM DE MARIAGE & TEASERS CINÉMA</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg></div>
-    </div>
-  </div>
-
-  <!-- =========================================================
-       NOS RÉALISATIONS (3D CURVED CAROUSEL - HIGH VISIBILITY & HOVER VIDEO)
-       ========================================================= -->
-  <section class="portfolio-curved-section" id="portfolio">
-    <div class="section-header text-center">
-      <h2 class="section-title">Nos <span class="text-orange">Réalisations</span></h2>
-      <p class="section-desc">
-        Photos et films de mariages traditionnels et civils, soutenances, concerts et festivals, capturés à Abidjan et partout en Côte d'Ivoire.
-      </p>
-    </div>
-
-    <!-- Row 1: scrolls left -->
-    <div class="curved-stage-wrapper" id="curvedStageWrapper">
-      <div class="curved-track track-scroll-left" id="curvedTrack">
+      <p class="work-intro">Photos et films de mariages traditionnels et civils, soutenances, concerts et festivals, capturés à Abidjan et partout en Côte d'Ivoire.</p>
+      <div class="filters-panel" id="filtersPanel" hidden>
+        <span class="eyebrow">(Filtres)</span>
+        <ul class="filters-list" id="filtersList"></ul>
       </div>
     </div>
-    <!-- Row 2: scrolls right (reverse) -->
-    <div class="curved-stage-wrapper" id="curvedStageWrapper2">
-      <div class="curved-track track-scroll-right" id="curvedTrack2">
+
+    <div class="work-grid" id="workGrid"></div>
+    <ol class="work-list" id="workList" hidden></ol>
+    <div class="list-preview" id="listPreview" aria-hidden="true"><img alt=""></div>
+
+    <div class="place-mark">
+      <span class="plus" aria-hidden="true">+</span>
+      <p class="place-big">(ABJ, CI)</p>
+      <span class="plus" aria-hidden="true">+</span>
+    </div>
+
+    <div class="frames">
+      <div class="frames-head"><span>Images</span><span>Projets</span></div>
+      <div class="frames-track-wrap">
+        <div class="frames-track" id="framesTrack"></div>
       </div>
     </div>
   </section>
 
   <!-- =========================================================
-       FORMULES & TARIFS (PAPER STACK / EDITORIAL SCRAPBOOK COLLAGE)
+       TARIFS : index éditorial en lignes
        ========================================================= -->
-  <section class="section-padding paper-scrapbook-section" id="tarifs">
-    <!-- Blue binder hole punches margin on the left side of section -->
-    <div class="binder-holes-margin">
-      <span class="blue-binder-hole"></span>
-      <span class="blue-binder-hole"></span>
-      <span class="blue-binder-hole"></span>
-      <span class="blue-binder-hole"></span>
-    </div>
-
-    <div class="section-header text-center" style="position: relative; z-index: 10;">
-
-      <h2 class="section-title paper-title">Tarifs & Packages <span class="text-orange">Scrapbook</span></h2>
-      <p class="section-desc paper-desc">
-        Nos formules photo &amp; vidéo pour votre mariage traditionnel ou civil à Abidjan, de 300 000 à 600 000 FCFA. Survolez ou touchez une fiche pour la passer au premier plan.
-      </p>
-    </div>
-
-    <!-- Editorial Scrapbook Paper Stack Container (Matching User Reference Image) -->
-    <div class="paper-stack-stage" id="paperStackStage">
-      <!-- Cards rendered dynamically via JS in overlapping document stack -->
-    </div>
+  <section class="block" id="tarifs">
+    <div class="eyebrow-row"><span>Formules</span><span>Mariages</span></div>
+    <h2 class="mega">Tarifs<sup class="mega-count">(06)</sup></h2>
+    <p class="block-intro">Nos formules photo &amp; vidéo pour votre mariage traditionnel ou civil à Abidjan, de 300 000 à 600 000 FCFA. Les frais de déplacement hors Abidjan sont précisés dans le devis.</p>
+    <div class="price-list" id="priceList"></div>
   </section>
 
   <!-- =========================================================
-       SECTION À PROPOS & STATS
+       STUDIO / À PROPOS
        ========================================================= -->
-  <section class="section-padding" id="apropos">
+  <section class="block about" id="apropos">
+    <div class="eyebrow-row"><span>(04) Studio</span><span>Abidjan, Côte d'Ivoire</span></div>
     <div class="about-grid">
-      <div class="about-visual">
+      <figure class="about-visual">
         <img src="assets/hero-bride-bw.webp" alt="Mariée en tenue traditionnelle baoulé photographiée en noir et blanc par BFG Moment à Abidjan" width="768" height="1024" loading="lazy" decoding="async">
+        <figcaption>Vales &amp; Marie — Mariage baoulé</figcaption>
+      </figure>
+      <div class="about-text">
+        <h2 class="statement">L'art de sublimer chaque seconde. L'éphémère devient éternel.</h2>
+        <p>Basée à Abidjan, BFG Moment est une agence de production vidéo, de cinématographie d'art et de photographie. Nous racontons chaque histoire comme un film : une équipe de photographes chevronnés, de cadreurs passionnés et de pilotes de drone certifiés, un jeu avec la lumière et les émotions qui définit notre style.</p>
+        <dl class="stats">
+          <div class="stat"><dt>(01) Événements capturés</dt><dd>150+</dd></div>
+          <div class="stat"><dt>(02) Vidéo &amp; drone</dt><dd>4K</dd></div>
+          <div class="stat"><dt>(03) Clients satisfaits</dt><dd>100%</dd></div>
+        </dl>
+        <ul class="trust-strip" aria-label="Événements couverts par BFG Moment">
+          <li>MASA 2024 &amp; 2026</li>
+          <li>Abissa ESMA</li>
+          <li>QITAA 2025</li>
+          <li>CHU de Cocody</li>
+          <li>Mariage Ghana × Côte d'Ivoire</li>
+        </ul>
       </div>
+    </div>
 
-      <div>
-        <h2 class="section-title">L'Art de sublimer <span class="text-orange">chaque seconde</span></h2>
-        <p class="section-desc">
-          Chez <strong>BFG Moment</strong>, nous racontons chaque histoire comme un chef-d'œuvre cinématographique. Grâce à notre équipe composée de photographes chevronnés, de cadreurs passionnés et de pilotes de drone certifiés, nous immortalisons l'authenticité de vos moments précieux.
-        </p>
-
-        <div class="stats-counter-grid">
-          <div class="stat-item">
-            <div class="stat-number">150+</div>
-            <div class="stat-label">Événements Capturés</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">4K</div>
-            <div class="stat-label">Ultra-HD Vidéo & Drone</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Satisfaction Clients</div>
-          </div>
-        </div>
+    <div class="testimonials" id="temoignages">
+      <div class="eyebrow-row"><span>(Témoignages)</span><span>Ils nous ont fait confiance</span></div>
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <!-- Témoignages rendus par script.js (tableau testimonialsData) -->
       </div>
     </div>
   </section>
 
   <!-- =========================================================
-       SECTION TÉMOIGNAGES & CONFIANCE
+       FAQ (balisée FAQPage dans le JSON-LD)
        ========================================================= -->
-  <section class="section-padding trust-section" id="temoignages">
-    <div class="section-header text-center">
-      <h2 class="section-title">Ils nous ont fait <span class="text-orange">confiance</span></h2>
-      <p class="section-desc">
-        Des cérémonies intimes aux grandes scènes culturelles, voici quelques-uns des événements que nous avons eu l'honneur de capturer.
-      </p>
-    </div>
-
-    <ul class="trust-strip" aria-label="Événements couverts par BFG Moment">
-      <li>MASA 2024 &amp; 2026</li>
-      <li>Abissa ESMA</li>
-      <li>QITAA 2025</li>
-      <li>CHU de Cocody</li>
-      <li>Mariage Ghana × Côte d'Ivoire</li>
-    </ul>
-
-    <div class="testimonials-grid" id="testimonialsGrid">
-      <!-- Témoignages rendus par script.js (tableau testimonialsData) -->
-    </div>
-  </section>
-
-  <!-- =========================================================
-       SECTION FAQ (questions fréquentes, balisée FAQPage dans le JSON-LD)
-       ========================================================= -->
-  <section class="section-padding faq-section" id="faq">
-    <div class="section-header text-center">
-      <h2 class="section-title">Questions <span class="text-orange">fréquentes</span></h2>
-      <p class="section-desc">
-        Tout ce qu'il faut savoir avant de réserver votre photographe et vidéaste de mariage à Abidjan.
-      </p>
-    </div>
+  <section class="block faq" id="faq">
+    <div class="eyebrow-row"><span>Avant de réserver</span><span>Questions</span></div>
+    <h2 class="mega">FAQ<sup class="mega-count">(06)</sup></h2>
     <div class="faq-list">
-      <details class="faq-item" open>
-        <summary class="faq-question"><span>Quels types d'événements couvrez-vous ?</span><svg class="icon faq-chevron" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary>
+      <details class="faq-item">
+        <summary><span class="faq-num">(01)</span><span class="faq-q">Quels types d'événements couvrez-vous ?</span><span class="faq-plus" aria-hidden="true">+</span></summary>
         <div class="faq-answer"><p>Mariages traditionnels et civils, soutenances de thèse et de mémoire, concerts, galas et festivals (MASA, Abissa), shootings photo en studio et captations par drone 4K, à Abidjan et dans toute la Côte d'Ivoire.</p></div>
       </details>
       <details class="faq-item">
-        <summary class="faq-question"><span>Combien coûte un reportage photo et vidéo de mariage ?</span><svg class="icon faq-chevron" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary>
+        <summary><span class="faq-num">(02)</span><span class="faq-q">Combien coûte un reportage photo et vidéo de mariage ?</span><span class="faq-plus" aria-hidden="true">+</span></summary>
         <div class="faq-answer"><p>Nos formules mariage vont de 300 000 FCFA (Classique : 1 photographe, 1 cadreur, film complet, teaser et plus de 250 photos retouchées) à 600 000 FCFA (Pack Ultime : 2 photographes, 2 cadreurs, droniste 4K, livre photo prestige, couverture sur 2 jours). Le détail de chaque formule est dans la section Tarifs.</p></div>
       </details>
       <details class="faq-item">
-        <summary class="faq-question"><span>Intervenez-vous en dehors d'Abidjan ?</span><svg class="icon faq-chevron" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary>
+        <summary><span class="faq-num">(03)</span><span class="faq-q">Intervenez-vous en dehors d'Abidjan ?</span><span class="faq-plus" aria-hidden="true">+</span></summary>
         <div class="faq-answer"><p>Oui. Nous sommes basés à Abidjan et nous nous déplaçons partout en Côte d'Ivoire (Yamoussoukro, Bouaké, Grand-Bassam, San Pedro…) et à l'étranger sur demande, comme pour notre film de mariage Ghana × Côte d'Ivoire. Les frais de déplacement sont précisés dans le devis.</p></div>
       </details>
       <details class="faq-item">
-        <summary class="faq-question"><span>Faites-vous des prises de vue par drone ?</span><svg class="icon faq-chevron" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary>
+        <summary><span class="faq-num">(04)</span><span class="faq-q">Faites-vous des prises de vue par drone ?</span><span class="faq-plus" aria-hidden="true">+</span></summary>
         <div class="faq-answer"><p>Oui, avec un droniste certifié et des images en 4K Ultra-HD. Le drone est inclus dans les formules Civil Luxe et Pack Ultime, et peut être ajouté en option sur les autres formules.</p></div>
       </details>
       <details class="faq-item">
-        <summary class="faq-question"><span>Que recevons-nous à la fin de la prestation ?</span><svg class="icon faq-chevron" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary>
+        <summary><span class="faq-num">(05)</span><span class="faq-q">Que recevons-nous à la fin de la prestation ?</span><span class="faq-plus" aria-hidden="true">+</span></summary>
         <div class="faq-answer"><p>Selon la formule : le film complet de la cérémonie, un teaser pour les réseaux sociaux, de 250 à 300 photos retouchées en HD et, pour les formules Luxe, Premium et Pack Ultime, un livre photo prestige de 100 pages.</p></div>
       </details>
       <details class="faq-item">
-        <summary class="faq-question"><span>Comment réserver une date ?</span><svg class="icon faq-chevron" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></summary>
+        <summary><span class="faq-num">(06)</span><span class="faq-q">Comment réserver une date ?</span><span class="faq-plus" aria-hidden="true">+</span></summary>
         <div class="faq-answer"><p>Remplissez le formulaire de réservation : votre demande est envoyée directement sur notre WhatsApp. Vous pouvez aussi nous appeler au +225 07 67 66 04 76 ou écrire à bfgmoment@gmail.com. Nous confirmons la disponibilité de la date et vous envoyons un devis.</p></div>
       </details>
     </div>
   </section>
 
   <!-- =========================================================
-       SECTION CONTACT & RÉSERVATION (Design Editorial Multi-Step)
+       CONTACT : appel final, ouvre le panneau de réservation
        ========================================================= -->
-  <section class="section-padding contact-showcase-section" id="contact">
-    <div class="contact-editorial-container">
-      
-      <!-- Colonne Gauche: Poétique "Contactez-nous" -->
-      <div class="contact-editorial-left">
-        <div class="contact-script-header">
-          <h2 class="contact-script-title">Contactez-nous</h2>
-          <span class="contact-script-subbadge">DISCUTONS DE VOTRE PROJET</span>
-        </div>
-        
-        <p class="contact-editorial-p">
-          Notre passion est de créer des films de mariage cinématiques et de capturer des photographies authentiques et éclatantes qui vous permettent de revivre chaque instant et de ressentir à nouveau toutes les émotions du jour le plus important de votre vie.
-        </p>
-
-        <p class="contact-editorial-p">
-          Prêt(e) à créer votre film intemporel et à immortaliser des souvenirs inoubliables à travers des images captivantes ? Contactez-nous dès aujourd’hui pour échanger sur vos envies et réserver votre date.
-        </p>
-      </div>
-
-      <!-- Colonne Droite: Carte Formulaire Direct WhatsApp -->
-      <div class="contact-card-wrapper">
-        <form class="booking-form-direct" id="bookingForm">
-          
-          <!-- Votre Nom * -->
-          <fieldset class="form-field-group">
-            <legend class="form-serif-heading">Votre Nom <span class="req-star">*</span></legend>
-            <div class="subnames-grid">
-              <div class="subname-col">
-                <label for="firstNameInput" class="subname-italic-label">Prénom</label>
-                <input type="text" class="elegant-input" id="firstNameInput" placeholder="Prénom" autocomplete="given-name" required>
-              </div>
-              <div class="subname-col">
-                <label for="lastNameInput" class="subname-italic-label">Nom</label>
-                <input type="text" class="elegant-input" id="lastNameInput" placeholder="Nom" autocomplete="family-name" required>
-              </div>
-            </div>
-          </fieldset>
-
-          <!-- Email & Téléphone en 2 colonnes -->
-          <div class="form-duo-grid">
-            <div class="form-field-group">
-              <label for="emailInput" class="form-serif-heading">Email <span class="req-star">*</span></label>
-              <input type="email" class="elegant-input" id="emailInput" placeholder="votre-email@domaine.com" autocomplete="email" required>
-            </div>
-
-            <div class="form-field-group">
-              <label for="phoneInput" class="form-serif-heading">Téléphone / WhatsApp <span class="req-star">*</span></label>
-              <input type="tel" class="elegant-input" id="phoneInput" placeholder="+225 07 00 00 00 00" autocomplete="tel" required>
-            </div>
-          </div>
-
-          <!-- Type d'événement & Date en 2 colonnes -->
-          <div class="form-duo-grid">
-            <div class="form-field-group">
-              <label for="serviceSelect" class="form-serif-heading">Type d'Événement <span class="req-star">*</span></label>
-              <div class="custom-select-box">
-                <select class="elegant-select" id="serviceSelect" required>
-                  <option value="Mariage Traditionnel" selected>Mariage Traditionnel</option>
-                  <option value="Mariage Civil">Mariage Civil</option>
-                  <option value="Soutenance Académique">Soutenance de Thèse / Mémoire</option>
-                  <option value="Culture & Festival">Concert / Gala / MASA</option>
-                  <option value="Shooting Studio">Shooting Photo & Portrait</option>
-                </select>
-                <span class="select-chevron"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg></span>
-              </div>
-            </div>
-
-            <div class="form-field-group">
-              <label for="dateInput" class="form-serif-heading">Date Prévue <span class="req-star">*</span></label>
-              <input type="date" class="elegant-input" id="dateInput" required>
-            </div>
-          </div>
-
-          <!-- Lieu / Ville -->
-          <div class="form-field-group">
-            <label for="locationInput" class="form-serif-heading">Lieu / Ville de l'événement <span class="req-star">*</span></label>
-            <input type="text" class="elegant-input" id="locationInput" placeholder="Ex: Abidjan (Cocody, Plateau...), Yamoussoukro, etc." required>
-          </div>
-
-          <!-- Prestations souhaitées * Checkboxes -->
-          <fieldset class="form-field-group">
-            <legend class="form-serif-heading">Prestations souhaitées <span class="req-star">*</span></legend>
-            <div class="sub-interest-note">Sélectionnez les prestations de votre choix</div>
-            <div class="checkboxes-row-grid">
-              <label class="stylish-checkbox-label">
-                <input type="checkbox" name="servicesWanted" value="Photographie" checked>
-                <span class="checkbox-box-custom"></span>
-                <span class="checkbox-caption">Photographie</span>
-              </label>
-              <label class="stylish-checkbox-label">
-                <input type="checkbox" name="servicesWanted" value="Vidéographie / Film" checked>
-                <span class="checkbox-box-custom"></span>
-                <span class="checkbox-caption">Vidéographie / Film</span>
-              </label>
-              <label class="stylish-checkbox-label">
-                <input type="checkbox" name="servicesWanted" value="Création de Contenu">
-                <span class="checkbox-box-custom"></span>
-                <span class="checkbox-caption">Création de Contenu</span>
-              </label>
-              <label class="stylish-checkbox-label">
-                <input type="checkbox" name="servicesWanted" value="Captation Drone 4K">
-                <span class="checkbox-box-custom"></span>
-                <span class="checkbox-caption">Drone 4K Ultra-HD</span>
-              </label>
-            </div>
-          </fieldset>
-
-          <!-- Message / Détails -->
-          <div class="form-field-group">
-            <label for="messageInput" class="form-serif-heading">Parlez-nous de votre projet <span class="req-star">*</span></label>
-            <textarea class="elegant-textarea" id="messageInput" placeholder="Partagez avec nous vos souhaits, le programme prévu, vos attentes particulières..." required></textarea>
-          </div>
-
-          <!-- Bouton d'envoi direct WhatsApp -->
-          <div style="text-align: center;">
-            <button type="submit" class="btn-whatsapp-direct" id="submitBookingBtn">
-              <span>Envoyez la demande</span>
-              <span class="btn-wa-icon"><svg class="icon icon-fill" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg></span>
-            </button>
-          </div>
-        </form>
-      </div>
-
-    </div>
+  <section class="cta" id="contact">
+    <span class="eyebrow">(Contact)</span>
+    <button type="button" class="cta-big js-open-contact">Réserver<br>une date <span aria-hidden="true">→</span></button>
+    <p class="cta-sub">Envoyez la date, le lieu et le type d'événement sur WhatsApp : nous confirmons la disponibilité et vous envoyons un devis.</p>
   </section>
-
   </main>
 
-  <!-- Lightbox Modal -->
-  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
-    <div class="lightbox-content">
-      <button type="button" class="lightbox-close" id="lightboxCloseBtn" aria-label="Fermer la visionneuse">
-        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-x"/></svg>
-      </button>
-      <div class="lightbox-media-container"></div>
-      <div class="lightbox-caption">
-        <button type="button" class="lightbox-nav-btn" id="lightboxPrevBtn" aria-label="Média précédent">
-          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-left"/></svg>
-        </button>
-        <div class="lightbox-caption-text">
-          <div class="lightbox-title" id="lightboxTitle">BFG MOMENT</div>
-          <div class="lightbox-desc">Production Vidéo & Photographie</div>
-          <div class="lightbox-counter" id="lightboxCounter" aria-live="polite"></div>
+  <!-- =========================================================
+       PANNEAU CONTACT & RÉSERVATION (formulaire → WhatsApp)
+       ========================================================= -->
+  <div class="contact-panel" id="contactPanel" role="dialog" aria-modal="true" aria-labelledby="contactPanelTitle" inert>
+    <div class="cp-topbar">
+      <span class="cp-muted" id="contactPanelTitle">(Nous écrire)</span>
+      <span class="cp-muted cp-clock">Abidjan, CI — <span class="js-clock">--:--:--</span></span>
+      <button type="button" class="cp-close" id="contactCloseBtn">Fermer <span class="cp-x" aria-hidden="true"></span></button>
+    </div>
+    <div class="cp-body">
+      <div class="cp-columns">
+        <div class="cp-col">
+          <div class="cp-reveal">
+            <span class="eyebrow">(01) Écrire</span>
+            <a href="mailto:bfgmoment@gmail.com" class="cp-email">bfgmoment@gmail.com</a>
+            <div><button type="button" class="pill-btn" id="copyEmailBtn">Copier l'adresse</button></div>
+          </div>
+          <div class="cp-rows cp-reveal">
+            <a href="tel:+2250767660476" class="cp-row"><span class="cp-n">(02)</span><span class="cp-k">Téléphone</span><span class="cp-v">+225 07 67 66 04 76</span></a>
+            <a href="https://wa.me/2250767660476" target="_blank" rel="noopener" class="cp-row"><span class="cp-n">(03)</span><span class="cp-k">WhatsApp</span><span class="cp-v">Message direct</span></a>
+            <a href="https://www.instagram.com/bfg_moment/" target="_blank" rel="noopener" class="cp-row"><span class="cp-n">(04)</span><span class="cp-k">Instagram</span><span class="cp-v">@bfg_moment</span></a>
+            <div class="cp-row"><span class="cp-n">(05)</span><span class="cp-k">Basé à</span><span class="cp-v">Abidjan, Côte d'Ivoire</span></div>
+          </div>
+          <p class="cp-note cp-reveal">Mariages, soutenances, concerts et festivals. Notre passion : des films cinématiques et des photographies authentiques qui vous permettent de revivre chaque instant.</p>
         </div>
-        <button type="button" class="lightbox-nav-btn" id="lightboxNextBtn" aria-label="Média suivant">
-          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-right"/></svg>
-        </button>
+
+        <div class="cp-col cp-reveal">
+          <form class="booking-form" id="bookingForm">
+            <span class="eyebrow">(06) Réserver une date</span>
+            <div class="field-row">
+              <label class="field"><span>Prénom *</span><input type="text" id="firstNameInput" placeholder="Votre prénom" autocomplete="given-name" required></label>
+              <label class="field"><span>Nom *</span><input type="text" id="lastNameInput" placeholder="Votre nom" autocomplete="family-name" required></label>
+            </div>
+            <div class="field-row">
+              <label class="field"><span>Email *</span><input type="email" id="emailInput" placeholder="vous@domaine.com" autocomplete="email" required></label>
+              <label class="field"><span>Téléphone / WhatsApp *</span><input type="tel" id="phoneInput" placeholder="+225 07 00 00 00 00" autocomplete="tel" required></label>
+            </div>
+            <div class="field-row">
+              <label class="field"><span>Type d'événement *</span>
+                <select id="serviceSelect" required>
+                  <option value="Mariage Traditionnel" selected>Mariage traditionnel</option>
+                  <option value="Mariage Civil">Mariage civil</option>
+                  <option value="Soutenance Académique">Soutenance de thèse / mémoire</option>
+                  <option value="Culture & Festival">Concert / Gala / MASA</option>
+                  <option value="Shooting Studio">Shooting photo &amp; portrait</option>
+                </select>
+              </label>
+              <label class="field"><span>Date prévue *</span><input type="date" id="dateInput" required></label>
+            </div>
+            <label class="field"><span>Lieu / Ville *</span><input type="text" id="locationInput" placeholder="Abidjan (Cocody, Plateau…), Yamoussoukro…" required></label>
+            <fieldset class="field checks">
+              <legend>Prestations souhaitées</legend>
+              <label class="check"><input type="checkbox" name="servicesWanted" value="Photographie" checked><span>Photographie</span></label>
+              <label class="check"><input type="checkbox" name="servicesWanted" value="Vidéographie / Film" checked><span>Vidéo / Film</span></label>
+              <label class="check"><input type="checkbox" name="servicesWanted" value="Création de Contenu"><span>Contenu</span></label>
+              <label class="check"><input type="checkbox" name="servicesWanted" value="Captation Drone 4K"><span>Drone 4K</span></label>
+            </fieldset>
+            <label class="field"><span>Votre projet *</span><textarea id="messageInput" rows="3" placeholder="Programme prévu, souhaits, attentes particulières…" required></textarea></label>
+            <button type="submit" class="send-btn" id="submitBookingBtn">Envoyer sur WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="cp-marquee" aria-hidden="true">
+      <div class="cp-marquee-track">
+        <span>Disponible pour vos événements — 2026 <i>+</i></span><span>Mariages traditionnels &amp; civils <i>+</i></span><span>Drone 4K Ultra-HD <i>+</i></span><span>Festivals &amp; concerts <i>+</i></span>
+        <span>Disponible pour vos événements — 2026 <i>+</i></span><span>Mariages traditionnels &amp; civils <i>+</i></span><span>Drone 4K Ultra-HD <i>+</i></span><span>Festivals &amp; concerts <i>+</i></span>
       </div>
     </div>
   </div>
 
-  <!-- Footer -->
+  <!-- Visionneuse -->
+  <div class="lightbox" id="lightboxModal" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+    <div class="lb-top">
+      <span class="lb-title" id="lightboxTitle">BFG Moment</span>
+      <span class="lb-counter" id="lightboxCounter" aria-live="polite"></span>
+      <button type="button" class="cp-close" id="lightboxCloseBtn">Fermer <span class="cp-x" aria-hidden="true"></span></button>
+    </div>
+    <div class="lb-stage">
+      <button type="button" class="lb-nav" id="lightboxPrevBtn" aria-label="Média précédent"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-left"/></svg></button>
+      <div class="lb-media"></div>
+      <button type="button" class="lb-nav" id="lightboxNextBtn" aria-label="Média suivant"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron-right"/></svg></button>
+    </div>
+    <p class="lb-desc" id="lightboxDesc"></p>
+  </div>
+
+  <!-- Pied de page -->
   <footer class="site-footer">
-    <div class="footer-container">
-      <div>
-        <div class="brand-logo-discrete" style="margin-bottom: 1.25rem;">
-          <img src="logo.svg" alt="BFG MOMENT" class="header-logo-img" style="height: 38px;">
-          <span class="brand-name-subtle" style="color: #FFF;">BFG MOMENT</span>
-        </div>
-        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; max-width: 380px; margin-bottom: 1.25rem;">
-          Studio de cinématographie et photographie professionnelle en Côte d'Ivoire.
-        </p>
-        <div class="social-icons-strip">
-          <a href="https://www.instagram.com/bfg_moment/" target="_blank" rel="noopener" class="social-icon-link" aria-label="Instagram BFG Moment" title="Instagram @bfg_moment">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-          </a>
-          <a href="https://www.tiktok.com/@bfg_moment" target="_blank" rel="noopener" class="social-icon-link" aria-label="TikTok BFG Moment" title="TikTok @bfg_moment">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.47 6.27 6.27 0 0 0 1.95-4.52V8.06a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.95.51z"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div>
-        <h4 class="footer-col-title">NAVIGATION</h4>
-        <ul class="footer-links">
-          <li><a href="#hero">Accueil</a></li>
-          <li><a href="#portfolio">Nos Réalisations</a></li>
-          <li><a href="#tarifs">Tarifs Scrapbook</a></li>
-          <li><a href="#apropos">À Propos</a></li>
-          <li><a href="#temoignages">Témoignages</a></li>
-          <li><a href="#faq">Questions fréquentes</a></li>
-          <li><a href="#contact">Réservation</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="footer-col-title">PRESTATIONS</h4>
-        <ul class="footer-links">
-          <li><a href="#tarifs">Mariages Traditionnels</a></li>
-          <li><a href="#tarifs">Mariages Civils</a></li>
-          <li><a href="#portfolio">Festivals & Concerts</a></li>
-          <li><a href="#portfolio">Soutenances</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="footer-col-title">CONTACT DIRECT</h4>
-        <ul class="footer-links">
-          <li><a href="tel:+2250767660476"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg> +225 0767660476</a></li>
-          <li><a href="mailto:bfgmoment@gmail.com"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg> bfgmoment@gmail.com</a></li>
-          <li><address class="footer-address">Abidjan, Côte d'Ivoire</address></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div>&copy; 2026 BFG MOMENT. Tous droits réservés.</div>
-      <div>Filiale de Peace Agency | Propulsé par <a href="https://codexworld-eosin.vercel.app" target="_blank" rel="noopener" class="footer-credit-link">CodexWorld</a></div>
-    </div>
+    <span>ABJ, CI&nbsp;&nbsp;Photo · Vidéo · Drone</span>
+    <span class="ft-links">
+      <a href="https://www.instagram.com/bfg_moment/" target="_blank" rel="noopener" class="link-underline">Instagram</a>
+      <a href="https://www.tiktok.com/@bfg_moment" target="_blank" rel="noopener" class="link-underline">TikTok</a>
+    </span>
+    <span>©2026 BFG Moment · Filiale de Peace Agency · <a href="https://codexworld-eosin.vercel.app" target="_blank" rel="noopener" class="link-underline">CodexWorld</a></span>
+    <a href="#hero" class="link-underline">↑ Haut de page</a>
   </footer>
 
-  <!-- Custom JS -->
   <script src="script.js"></script>
 </body>
 </html>
